@@ -214,7 +214,7 @@ header {
     align-items: center;
     gap: 20px; /* Para agregar un poco de espacio entre los items */
 }
-  }
+  
   
   /* Estilos responsivos */
   @media (max-width: 760px) {
@@ -237,7 +237,7 @@ header {
       flex-direction: column;
       align-items: flex-start;
     }
-  }
+  
   
   
   
