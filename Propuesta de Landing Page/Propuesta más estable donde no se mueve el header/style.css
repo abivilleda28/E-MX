@@ -1,30 +1,13 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap'); */
 
-
-header{
+.navbar{
   background-color: #FFB300;
-  position: fixed;
-  width: 100%;   
-  
-}
-
-footer {
-  
-  background: linear-gradient(#73C2FB, #73C2FB, #28A0F6);    
-  color:black;
-}
-
-main{
-  padding-top: 150px;
   
   
 }
-h1{
-  font-family: "Cinzel";
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 20px;
-
+footer{
+  
+  background: linear-gradient(#73C2FB, #73C2FB, #28A0F6);
 }
 ul {
   list-style-type: none; /* Quita los puntos */
@@ -34,4 +17,3 @@ ul {
       color: black;
       text-decoration: none; /* Opcional: Para eliminar el subrayado */
     }
-      
