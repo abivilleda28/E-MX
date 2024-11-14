@@ -1,24 +1,127 @@
-body{
-    font-family: 'Fjalla One';
+.navbar-brand1{
+  font-family: "Cinzel", serif;
+font-optical-sizing: auto;
+font-style: normal;
+}
+.nav-item{
+  font-size: 14px;
+}
+.btn{
+  font-size: 11px;
+
+}
+#contenedor2{
+ height: 100px;
+ background: linear-gradient(#73C2FB,#73C2FB,#28A0F6);
+}
+.list{
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.ancla{
+  text-decoration: none;
+}
+.lista{
+  margin-bottom: 5px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
 }
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #28A0F6;
+* {
+  box-sizing: border-box;
+}
+
+img, input, nav {
+  max-width: 100%;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  background: linear-gradient(#73C2FB, #73C2FB, #28A0F6);
+  padding: 50px 0;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.footer-links {
+  flex-basis: 25%; /* Mantiene el 25% en pantallas grandes */
+  padding: 0 20px;
+}
+
+.footer-links ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #73C2FB;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+  .footer-row {
+      flex-direction: column; /* Cambia las columnas a una sola columna */
+      align-items: center;
+      text-align: center; /* Centra el texto para un diseño más limpio */
   }
 
-  #header {
-    font-family: 'Cinzel';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: #EAC240;
+  .footer-links {
+      flex-basis: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+      padding: 10px 0;
   }
 
-  #logo1{
-    width: 190px;
+  .footer-links h4 {
+      text-align: center; /* Centra el título en dispositivos móviles */
   }
+}
+
+/*Que una imagen flote*/
+@keyframes float {
+0% {
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
+}
+50% {
+  box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+  transform: translatey(-20px);
+}
+100% {
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
+}
+}
+
+/*Hacer que imágenes de clase avatar 'floten'. Apoyo de https://codepen.io/MarioDesigns/pen/woJgeo*/
+.avatar {
+width: 150px;
+height: 150px;
+box-sizing:content-box;
+border-radius: 50%; /*Esto hace que sea un círculo*/
+/*overflow: hidden; /*Esto protege que elementos NO se salgan del círculo*/
+box-shadow: 0 5px 15px 0px #73C2FB(0,0,0,1); /*Efecto de sombra, después del color muestra la opacidad*/
+/*transform: translatey(0px); /*Parte de la animación, el comentar esto no parece afectar la animación*/
+animation: float 10s ease-in-out infinite; /*velocidad en la que flota*/
+img { width: 100%; height: auto; } /*Esto asegura que la imagen quede dentro de su div/container */
+}
