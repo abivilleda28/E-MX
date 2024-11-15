@@ -44,6 +44,32 @@
 
 /* estilos del formulario */
 /* estilos.css */
+#estructuraGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual ancho */
+    align-items: center;
+    gap: 20px; /* Espacio entre elementos */
+}
+#contenedorImagen {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 5px; /* Opcional: altura del contenedor */
+}
+
+.imagen {
+    display: inline; /* Para que se comporte como un bloque y se pueda centrar */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 15px; /* Bordes redondeados */
+    max-width: 200px;
+    width: 80%; /* Ajusta el tamaño de la imagen (puedes cambiar el porcentaje) */
+    height: 50px; /* Mantén la proporción original de la imagen */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional para destacar la imagen */
+}
+
 body {
      background-color: white; /* Fondo suave y agradable */
     display: flex;
@@ -72,6 +98,7 @@ h1 {
     max-width: 400px;
     box-sizing: border-box;
     margin-top: 20px; /* Espacio entre el h1 y el formulario */
+    margin-bottom: 20px;
 }
 
 label {
