@@ -1,7 +1,8 @@
 /* estilos.css */
 body {
-    font-family: 'Abel', sans-serif;
-    background-color: cyan; /* Fondo suave y agradable */
+    font-family: "Cinzel Decorative";
+    font-size: 8pt;
+    background-color: white; /* Fondo suave y agradable */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -11,14 +12,14 @@ body {
 }
 
 h1 {
-    color: darkblue;
+    color: black;
     font-size: 2em;
     text-align: center;
     margin-top: 20px; /* Asegura que esté cerca de la parte superior */
 }
 
 form {
-    background-color: #ffffff;
+    background: linear-gradient(#fc94b7,#E91E63);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px #0c3f52;
@@ -55,11 +56,11 @@ input[type="button"] {
     width: 100%;
     padding: 10px;
     background-color: #3498db;
-    color: white;
+    color: #73C2FB;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 30px;
     margin-top: 10px;
 }
 
@@ -76,4 +77,8 @@ input[type="radio"] {
 center {
     display: block;
     margin-top: 20px;
+}
+
+#registrarse{
+    background-color: #73C2FB;
 }

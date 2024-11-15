@@ -1,49 +1,36 @@
- .navbar-brand1{
-    font-family: "Cinzel Decorative", serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-    }
-    .nav-item{
-        font-size: 14px;
-    }
-    .btn{
-        font-size: 11px;
-    
-    }
-    #contenedor2{
-       height: 100px;
-       background: linear-gradient(#73C2FB,#73C2FB,#28A0F6);
-    }
-    .list{
-        font-family: "Fjalla One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        text-align: center;
-    }
-    .ancla{
-        text-decoration: none;
-    }
-    .lista{
-        margin-bottom: 5px;
-    }
+ /* Aqui empieza el header */
+ .navbar {
+    background-color: #FFC107;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Agrega una ligera sombra */
+}
 
-    html, body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        width: 100%;
-    }
-    
-    * {
-        box-sizing: border-box;
-    }
-    
-    img, input, nav {
-        max-width: 100%;
-    }
+.navbar-brand img {
+    margin-right: 10px; /* Añade espacio entre el logo y el texto */
+}
 
-/* estilos del formulario */
-/* estilos.css */
+.navbar-nav .nav-item {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+
+/* Aqui empieza el formulario */
 body {
     font-family: "Cinzel Decorative";
     font-size: 8pt;
@@ -62,16 +49,21 @@ h1 {
     text-align: center;
     margin-top: 20px; /* Asegura que esté cerca de la parte superior */
 }
-
 .form-container {
-    background: linear-gradient(#fc94b7,#E91E63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+form {
+    background: linear-gradient(#fc94b7, #E91E63);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 12px #0c3f52;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
-    margin-top: 20px; /* Espacio entre el h1 y el formulario */
 }
 
 label {
@@ -127,7 +119,8 @@ center {
 #registrarse{
     background-color: #73C2FB;
 }
-/* Aquí empieza el estilo del footer */
+
+/* Aqui empieza el footer */
     .footer {
         width: 100%;
         margin: 0;
@@ -167,19 +160,28 @@ center {
     
     /* Estilos responsivos para dispositivos móviles */
     @media (max-width: 768px) {
-        .footer-row {
-            flex-direction: column; /* Cambia las columnas a una sola columna */
+        .navbar-brand, .navbar-nav, .search-bar {
+            flex-direction: column;
             align-items: center;
-            text-align: center; /* Centra el texto para un diseño más limpio */
         }
     
-        .footer-links {
-            flex-basis: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
-            padding: 10px 0;
+        .navbar-nav {
+            gap: 10px;
+        }
+        
+        .search-bar {
+            margin-top: 10px;
+            width: 100%;
         }
     
-        .footer-links h4 {
-            text-align: center; /* Centra el título en dispositivos móviles */
+        .footer-row {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        form {
+            width: 100%;
+            margin: 20px;
         }
     }
     

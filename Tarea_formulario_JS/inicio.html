@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fjalla+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Contactanos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./inicio.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="navbar">
+    <a class="navbar-brand" href="#">
+        <img src="caco.png" alt="Logo" width="50" height="50">
+        <span>RAÍCES MÉXICO</span>
+    </a>
+    <div class="search-bar">
+        <input type="text" class="form-control" placeholder="Search">
+        <button class="btn btn-outline-success">Search</button>
+    </div>
+    <div class="navbar-nav">
+        <a class="nav-item" href="#">Menu</a>
+        <a class="nav-item" href="#">Productos</a>
+        <a class="nav-item" href="#">Contactanos</a>
+        <a class="nav-item" href="#">Nosotros</a>
+        <button class="btn btn-light">Sign In</button>
+        <button class="btn btn-dark">Log In</button>
+    </div>
+</div>
+     <!-- Header -->
+     <div class="contenedor"><!-- body -->
+      <main class="container-fluid d-flex vh-100 p-0 align-items-end border"></main>
+     </div>
+<!-- Aqui empieza el formulario -->
+<section class="form-container">
+<h1>Formulario de comprador</h1>
+<form>
+    <!--<label>Nombre completo:</label><!--Datos de entrada-->
+    <div class="datoEntrada" id="nombre">
+    <input type="text" placeholder="Nombre">
+    </div>
+    <br> <!--Salto de linea-->
+    <!-- <label for="correo"> Ingresa tu email:</label> -->
+    <div class="datoEntrada" id="email"> 
+    <input type="email" placeholder="Correo">
+    </div>
+    <br>
+    <!-- <label>Contraseña: </label> -->
+    <div class="datoEntrada" id="telefono">
+        <input type="password" placeholder="Teléfono">
+        </div>
+        <br>
+    <div class="datoEntrada" id="direccion">
+        <input type="password" placeholder="Ingresa tu dirección de envío">
+        </div>
+        <br>
+        <label>Términos y condiciones: </label>
+        <input type="checkbox">
+        <br>
+    <label>Quieres recibir promociones</label>
+    <input type="radio">
+    <div class="boton">
+        <center>
+        <button id="registrarse" type="submit">Registrarse</button>
+        <!-- <button id="Registrarse" type="submit">Enviar </button> -->
+        </center>
+    </div>
+</form>
+</section>
+     <!-- Aqui empieza el footer -->
+     <footer class="footer">
+      <div class="container">
+          <div class="footer-row" id="pie">
+              <div class="footer-links">
+                  <h4>Sobre Nosotros</h4>
+                  <ul role="navigation">
+                      <li><a href="#">Quienes somos</a></li>
+                      <li><a href="#">Recursos</a></li>
+                      <li><a href="#">Involúcrate</a></li>
+                      <li><a href="#">Trabaja con nosotros</a></li>
+                  </ul>
+              </div>
+              <div class="footer-links">
+                  <h4>Politíca de privacidad</h4>
+                  <ul>
+                      <li><a href="#">Politíca de privacidad</a></li>
+                      <li><a href="#">Cómo funcionamos</a></li>
+                      <li><a href="#">Declaración de Transparencia</a></li>
+                      <li><a href="#">Asuntos económicos</a></li>
+                  </ul>
+              </div>
+              <div class="footer-links">
+                  <h4>Servicio al cliente</h4>
+                  <ul>
+                      <li><a href="#">Términos y Condiciones</a></li>
+                      <li><a href="#">¿Necesitas ayuda?</a></li>
+                      <li><a href="#">Métodos de pago</a></li>
+                      <li><a href="#">Facturación</a></li>
+                      
+                  </ul>
+              </div>
+              <div class="footer-links">
+                  <h4>Aviso de copyright</h4>
+                  <ul>
+                      <li><a href="#">©2001-2024 Todos los derechos reservados. Raíces.MX® es una marca registrada de E-MX-HANDS.</a></li>
+                  </ul>
+              </div>
+              <div class="footer-links">
+                  <h4>Síguenos</h4>
+                  <div class="social-link">
+                      <a href="#"><i class="fab fa-facebook"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./Contactanos.js"></script>
+</body>
+</html>
