@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abel" />
+    <link rel="stylesheet" href="estilos2.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulario de comprador</h1>
+    <form>
+        <!--<label>Nombre completo:</label><!--Datos de entrada-->
+        <div class="datoEntrada" id="nombre">
+        <input type="text" placeholder="Nombre">
+        </div>
+        <br> <!--Salto de linea-->
+        <!-- <label for="correo"> Ingresa tu email:</label> -->
+        <div class="datoEntrada" id="email"> 
+        <input type="email" placeholder="Correo">
+        </div>
+        <br>
+        <!-- <label>Contraseña: </label> -->
+        <div class="datoEntrada" id="telefono">
+            <input type="password" placeholder="Teléfono">
+            </div>
+            <br>
+        <div class="datoEntrada" id="direccion">
+            <input type="password" placeholder="Ingresa tu dirección de envío">
+            </div>
+            <br>
+            <label>Términos y condiciones: </label>
+            <input type="checkbox">
+            <br>
+        <label>Quieres recibir promociones</label>
+        <input type="radio">
+        <div class="boton">
+            <center>
+            <button id="registrarse" type="submit">Registrarse</button>
+            <!-- <button id="Registrarse" type="submit">Enviar </button> -->
+            </center>
+        </div>
+    </form>
+<script src="script.js"></script>
+</body>
+</html>

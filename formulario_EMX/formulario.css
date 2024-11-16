@@ -1,0 +1,213 @@
+ .navbar-brand1{
+    font-family: "Cinzel Decorative", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+    .nav-item{
+        font-size: 14px;
+    }
+    .btn{
+        font-size: 11px;
+    
+    }
+    #contenedor2{
+       height: 100px;
+       background: linear-gradient(#73C2FB,#73C2FB,#28A0F6);
+    }
+    .list{
+        font-family: "Fjalla One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+    .ancla{
+        text-decoration: none;
+    }
+    .lista{
+        margin-bottom: 5px;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    img, input, nav {
+        max-width: 100%;
+    }
+
+/* estilos del formulario */
+/* estilos.css */
+#estructuraGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual ancho */
+    align-items: center;
+    gap: 20px; /* Espacio entre elementos */
+}
+#contenedorImagen {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 5px; /* Opcional: altura del contenedor */
+}
+
+.imagen {
+    display: inline; /* Para que se comporte como un bloque y se pueda centrar */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 15px; /* Bordes redondeados */
+    max-width: 200px;
+    width: 80%; /* Ajusta el tamaño de la imagen (puedes cambiar el porcentaje) */
+    height: 50px; /* Mantén la proporción original de la imagen */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional para destacar la imagen */
+}
+
+body {
+     background-color: white; /* Fondo suave y agradable */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px; /* Asegura que esté cerca de la parte superior */
+}
+
+.form-container {
+    font-family: "Fjalla One";
+    font-size: 8pt;
+    background: linear-gradient(#fc94b7,#E91E63);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px #0c3f52;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-top: 20px; /* Espacio entre el h1 y el formulario */
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2e2d2d;
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+    background-color: #f0f3f5;
+}
+
+input[type="submit"],
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #73C2FB;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #73C2FB;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+center {
+    display: block;
+    margin-top: 20px;
+}
+
+#registrarse{
+    background-color: #73C2FB;
+}
+/* Aquí empieza el estilo del footer */
+.footer {
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(#73C2FB, #73C2FB, #28A0F6);
+    padding: 50px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.footer-links {
+    flex-basis: 25%; /* Mantiene el 25% en pantallas grandes */
+    padding: 0 20px;
+}
+
+.footer-links ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #73C2FB;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column; /* Cambia las columnas a una sola columna */
+        align-items: center;
+        text-align: center; /* Centra el texto para un diseño más limpio */
+    }
+
+    .footer-links {
+        flex-basis: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+        padding: 10px 0;
+    }
+
+    .footer-links h4 {
+        text-align: center; /* Centra el título en dispositivos móviles */
+    }
+}
+
