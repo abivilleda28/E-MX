@@ -108,73 +108,61 @@ nav {
 }
 
 /* Estilos generales para la sección valores & misiones */
-.vision {
-    margin: 40px 40px;
-    /*padding: 40px 30px*/
+.misionVision {
+    margin: 30px;
 }
 
-.vision-info {
+.cont {
+
+    padding: auto;
+
+}
+
+.info {
     text-align: center;
-}
-
-.vision-txt {
-    display: flex;
-    justify-items: space-around;
-    flex-wrap: wrap;
-}
-
-.txt {
-    text-align: center;
-    margin: 20px;
-    padding: 25px;
-    flex: 1;
     background-color: #FFC1D6;
+    border: none;
     border-radius: 30px;
-    transition: transform 0.3s ease, background-color 0.3ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.txt:hover,
-.txt.active {
+.info:hover,
+.info.active {
     transform: scale(1.1);
-    background-color: #fce3f4;
+    background-color: #fce3f3;
 }
 
-.txt img {
-    transition: color 0.3s ease;
-
+.contenido {
+    padding: 10px;
 }
 
-.txt img:hover {
-    color: #73C2FB;
-
-}
-
-.txt h4 {
-    font-size: 20px;
+.contenido h5 {
+    font-size: 25px;
     font-family: 'Cinzel Decorative';
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
     color: #73C2FB;
+    padding-top: 25px;
 }
 
-.txt p {
+.contenido p {
     font-size: 16px;
     font-family: 'fajaone';
+    line-height: 1.;
     text-align: justify;
-    line-height: 1.3;
     color: #3b3737;
-    margin-bottom: 5px;
+    padding: 0 10px 10px 10px;
+
 }
 
-/* Aqui termina Vision y misión */
+/* Aqui comienza secciond de valores */
 
 .valores {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     box-sizing: border-box;
-    min-height: 30vh;
+    min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,7 +179,7 @@ nav {
 
 .contenedorValores h2 {
     color: #73C2FB;
-    font-family: 'faja one';
+    font-family: 'roboto';
     font-size: 35px;
 }
 
@@ -217,14 +205,16 @@ nav {
     letter-spacing: 1px;
 }
 
+/*Animación de p de valores*/
+
 @keyframes movimiento {
     0% {
         margin-top: 0;
     }
 
-    20% {
+    /*20% {
         margin-top: 0;
-    }
+    }*/
 
     25% {
         margin-top: -40px;
@@ -255,20 +245,10 @@ nav {
     }
 }
 
-.container-img {
-    display: flex;
-    flex-wrap: wrap;
+/*Aqui termina sesion de valores/
+/* imagenes de valores*/
+.valoresImg .col-4 {
     padding: 0;
-
-}
-
-.container-img img {
-    flex: 1 1 auto;
-    /* Se ajusta para que cada imagen ocupe un 30% del contenedor */
-    max-width: 33%;
-    /* Asegura que las imágenes no excedan el 30% del contenedor */
-    height: auto;
-
 }
 
 
@@ -333,21 +313,23 @@ nav {
         /* Centra el título en dispositivos móviles */
     }
 }
+
 /* ----------------------------------------------------------------------------*/
 /* Presentación de integrantes */
-.titleTeam{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-min-height: 30vh;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #fce3f4;
-    
+.titleTeam {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fce3f4;
+
 }
-.tituloTeam{
-    
+
+.tituloTeam {
+
     background-image: linear-gradient(90deg, #73C2FB, #f61ed2);
     font-family: 'faja one';
     font-size: 35px;
@@ -358,101 +340,114 @@ background-color: #fce3f4;
     padding: 0 5px;
     letter-spacing: 1px;
 }
+
 /* Estilos generales */
 .cardIntegrantes {
-  
+
     display: flex;
-    flex-wrap: wrap; /* Acomoda las cartas, acomodandolas en las filas siguientes para ocupar el espacio del navegador. */ 
+    flex-wrap: wrap;
+    /* Acomoda las cartas, acomodandolas en las filas siguientes para ocupar el espacio del navegador. */
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Espaciado entre las cartas */
+    gap: 20px;
+    /* Espaciado entre las cartas */
     margin: 40px;
-    }
-.cardIntegrantes h3{
+}
+
+.cardIntegrantes h3 {
     font-family: Cinzel;
     font-size: 20px;
-    background: #73C2FB ;
+    background: #73C2FB;
 }
-.card-content h5{
-    font-family:Cinzel;
+
+.card-content h5 {
+    font-family: Cinzel;
     font-size: 15px;
-   
+
 }
+
 /* --------------------------------------------------------------------*/
 .card {
-  position: relative;
-  width: 200px;
-  height: 250px;
-  margin: 10px;
-  
-} 
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+
+}
 
 .card .face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: .5s;
-  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
 }
+
 .card .front {
-  transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0 5px 10px #000;
-  background: #FFB300;
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+    background: #FFB300;
 }
 
 .card .front img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: #FFB300;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #FFB300;
 }
+
 .card .back {
-  transform: perspective(600px) rotateY(180deg);
-  background: #FFB300;;
-  padding: 15px;
-  color: #f3f3f3;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  box-shadow: 0 5px 10px #000;
+    transform: perspective(600px) rotateY(180deg);
+    background: #FFB300;
+    ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
 }
+
 .card:hover .front {
-  transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
 }
 
 .card:hover .back {
-  transform: perspective(600px) rotateY(360deg);
+    transform: perspective(600px) rotateY(360deg);
 }
 
 /*---------------------------------------------------------------------*/
- 
- .card-content {
-  flex-grow: 1;         /* Hace que el contenido ocupe el espacio restante disponible */
-  overflow: hidden;     /* Previene que el texto se desborde fuera del contenedor */
-  width: 200px;}
 
-  .card-title {
+.card-content {
+    flex-grow: 1;
+    /* Hace que el contenido ocupe el espacio restante disponible */
+    overflow: hidden;
+    /* Previene que el texto se desborde fuera del contenedor */
+    width: 200px;
+}
+
+.card-title {
     font-size: 1.5rem;
     margin: 10px;
-    text-align:center;
-    width: 200px; 
+    text-align: center;
+    width: 200px;
     font-family: 'Cinzel';
-     } 
-  
-  
-  .card-text {
+}
+
+
+.card-text {
     font-family: 'faja one';
     font-size: 0.9rem;
     text-align: justify;
-    background:  #fce3f4;
-    } 
-  
-  .text-body-secondary {
+    background: #fce3f4;
+}
+
+.text-body-secondary {
     list-style-type: none;
     font-family: 'Roboto';
     text-align: justify;
@@ -460,32 +455,37 @@ background-color: #fce3f4;
     color: #636262;
     padding-left: 0;
     background: #FFB300;
-  } 
-  
-  /* Responsividad */
-  @media (min-width: 600px) {
+}
+
+/* Responsividad */
+@media (min-width: 600px) {
     .card {
-      flex-direction: row; /* En pantallas grandes, la tarjeta se organiza en fila */
+        flex-direction: row;
+        /* En pantallas grandes, la tarjeta se organiza en fila */
     }
-  
+
     .card-image {
-      flex: 1 1 150px; /* La imagen ocupa un espacio mínimo pero flexible */
+        flex: 1 1 150px;
+        /* La imagen ocupa un espacio mínimo pero flexible */
     }
-  
+
     .card-content {
-      flex: 2 1 300px; /* El contenido ocupa más espacio, pero es flexible */
+        flex: 2 1 300px;
+        /* El contenido ocupa más espacio, pero es flexible */
     }
-  }
-  
-  @media (max-width: 599px) {
+}
+
+@media (max-width: 599px) {
     .card {
-      flex-direction: column; /* En pantallas pequeñas, la tarjeta se organiza en columna */
-      max-width: 100%;
+        flex-direction: column;
+        /* En pantallas pequeñas, la tarjeta se organiza en columna */
+        max-width: 100%;
     }
-  
+
     .card-image img {
-      width: 100%; /* La imagen ocupa todo el ancho */
+        width: 100%;
+        /* La imagen ocupa todo el ancho */
     }
-  }
+}
 
 /*-----------------------------------------------------------------------------*/
