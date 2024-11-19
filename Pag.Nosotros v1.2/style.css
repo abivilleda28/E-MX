@@ -114,7 +114,7 @@ nav {
 
 .cont {
 
-    padding: auto;
+    padding: 25px;
 
 }
 
@@ -354,10 +354,15 @@ nav {
     margin: 40px;
 }
 
+.cardIntegrantes .card-title a {
+    text-decoration: none;
+}
+
 .cardIntegrantes h3 {
     font-family: Cinzel;
     font-size: 20px;
     background: #73C2FB;
+    border-radius: 8px;
 }
 
 .card-content h5 {
