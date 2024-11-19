@@ -61,74 +61,52 @@
             </nav>
         </div>
     </div>
-     <!-- Header -->
-     <br><br><br><br><br><br> <!--Ver si esto se puede hacer 'mejor'-->
-     
+     <!-- Aqui empieza el login-->
      <div class="login-container">
-      <div class=""></div>
-      <div class="container-fluid vh-100 align-items-center"> <!--Todo el contenido-->
-        <div class="container align-items-center">
-          
-          <!--Empieza fila de imágnes y login-->
-          <div class="row p-4"> 
-            <div class="col-md-4 border p-4"> <!--Imagen 1-->
-              <a class="login-image">
-                <img src="./imagenes/caco.png" alt="imagen1_login">
-              </a>
-            </div>
-
-            <section class="container col-md-4 border m-10 p-4"><!--Login-->
-              <form id="boxStylePink" class="card login_cinzel">Ingresa tu usuario y contraseña
-                <br><br>
-                <div class="row">
-                  <input id="inputNombreUsuario" type="text" placeholder="Nombre de usuario" style="max-width: 300px;">
-                </div>
-                <div class="row">
-                  <input id="inputContrasena" type="text" placeholder="Contraseña" style="max-width: 300px;"> <!--Intente "maxlength="4" size="4"" pero no funcionó-->
-                </div>
-                <div id="botonStyle" class="row">
-                  <button id="botonStyle">Olvidé mi contraseña</button>
-                </div>
-              </form>              
-            </section>
-
-            <div class="col-md-4 border p-4"> <!--Imagen 2-->
-              <a class="login-image">
-                <img src="./imagenes/caco.png" alt="imagen2_login">
-              </a>
-            </div>
+      <div class="row p-4">
+        <!-- Imagen izquierda -->
+        <div class="col-md-4 text-center">
+          <img src="./imagenes/caco.png" alt="imagen1_login" class="image-style">
+        </div>
+    
+        <!-- Login -->
+        <div class="col-md-4">
+          <div id="boxStylePink" class="card login_cinzel text-center">
+            <p>Enter your login information</p>
+            <input id="inputNombreUsuario" type="text" placeholder="USER">
+            <input id="inputContrasena" type="password" placeholder="PASSWORD">
+            <button id="botonStyle" class="btn btn-primary">Log In</button>
           </div>
-          
-          <br>
-
-          <!--Empieza fila que lleva formulario-->
-
-
-          <div class="row p-4"> 
-            <div class="col-md-4 border p-4"> <!--vacio1-->
-              <div id="boxStylePink" class="card col-md-5" style="margin-left: 200px;">¿Quieres crear comprar artesanías?
-                <div class="row p-4">Puedes crear una cuenta y empezar a comprar todos los excelentes productos que ves a continuación.</div>
-                <div class="row">
-                  <button id="botonStyle">Haz click aquí para registrarte</button>
-                </div>
-              </div>
-            </div>
-
-            <section class="container col-md-4 border m-10 p-4"><!--Login-->
-          
-            </section>
-
-            <div class="col-md-4 border p-4"> <!--vacio2-->
-              <div id="boxStylePink" class="card col-md-5" style="margin-left: 200px;">¿Quieres vender tus productos?
-                <div class="row p-4">Puedes crear una cuenta y empezar a vender todos tus excelentes productos.</div>
-                <div class="row">
-                  <button id="botonStyle">Haz click aquí para registrarte</button>
-                </div>
-              </div>
-            </div>
+        </div>
+    
+        <!-- Imagen derecha -->
+        <div class="col-md-4 text-center">
+          <img src="./imagenes/caco.png" alt="imagen2_login" class="image-style">
+        </div>
+      </div>
+    
+      <!-- Descripciones y botones -->
+      <div class="row p-4">
+        <div class="col-md-4 text-center">
+          <div id="boxStylePink" class="card text-center">
+            <p>First time as a customer? Learn more about what you can do by creating your account!</p>
+            <button id="botonStyle" class="btn btn-primary">Create Your Account</button>
           </div>
-
-
+        </div>
+    
+        <div class="col-md-4 text-center">
+          <p>Breve descripción de nuestro diferenciador contra otros ecommerce similares</p>
+        </div>
+    
+        <div class="col-md-4 text-center">
+          <div id="boxStylePink" class="card text-center">
+            <p>First time as a business owner? Learn more about what you can do by creating your account!</p>
+            <button id="botonStyle" class="btn btn-primary">Create Your Account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
           <!--<div class="row align-items-center p-4 border"> Si modifico el "row", me pone una caja sobre otra
             Registro 1
             <div id="boxStylePink" class="card col-md-5" style="margin-left: 20px;">¿Quieres crear comprar artesanías?
@@ -149,9 +127,7 @@
         </div>
       </div>
      </div>
-
-     <br>
-
+     
     <!--Footer-->
      <footer class="footer">
       <div class="container">

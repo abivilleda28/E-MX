@@ -97,51 +97,73 @@ img, input, nav {
   }
 }
 
-/*Que una imagen flote*/
-@keyframes float {
-  0% {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-  }
-  50% {
-    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-    transform: translatey(-20px);
-  }
-  100% {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-  }
-}
 
-.login-container{
+
+/* Aqui empieza log in  */
+/* General Container */
+.login-container {
   display: flex;
-  gap: 30px;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  /*Lo de arriba debería poner TODO el container en el contenido de la página*/
+  justify-content: center;
+  gap: 20px;
+  min-height: 100vh;
   font-family: "Fjalla One", sans-serif;
-  font-size: 30px;
-  align-items: center;
   text-align: center;
-  /*Parece que no lo ocupo*line-height: 100px;/*Me mantiene todo mas al centro dentro de los divs del grid*/
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#inputNombreUsuario{
-  line-height: 10px;
+/* Imagenes */
+.image-style {
+  width: 100%;
+  max-width: 200px; /* Ajusta según el tamaño deseado */
+  border-radius: 10px; /* Esquinas redondeadas */
 }
 
-#inputContrasena{
-  line-height: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+/* Estilos para los contenedores con degradado */
+#boxStylePink {
+  background: linear-gradient(135deg, #FC94B7, #E91E63);
+  padding: 20px;
+  border-radius: 15px; /* Bordes redondeados */
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Efecto de profundidad */
 }
 
-#botonStyle{
-  width: auto;
-  justify-content: center;
-  align-items: center;
+/* Inputs */
+#inputNombreUsuario,
+#inputContrasena {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
 }
 
-#boxStylePink{
-  background: linear-gradient(#FC94B7,#E91E63);
+/* Botones */
+#botonStyle {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #00BCD4; /* Azul para destacar */
+  border: none;
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#botonStyle:hover {
+  background-color: #0097A7; /* Cambia el color al pasar el cursor */
+}
+
+/* Texto adicional */
+p {
+  font-size: 16px;
+  color: black;
 }
