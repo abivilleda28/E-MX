@@ -1,5 +1,5 @@
 .navbar-brand1{
-  font-family: "Cinzel", serif;
+font-family: "Cinzel", serif;
 font-optical-sizing: auto;
 font-style: normal;
 }
@@ -99,18 +99,18 @@ img, input, nav {
 
 /*Que una imagen flote*/
 @keyframes float {
-0% {
-  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-  transform: translatey(0px);
-}
-50% {
-  box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-  transform: translatey(-20px);
-}
-100% {
-  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-  transform: translatey(0px);
-}
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
 }
 
 /*Hacer que imágenes de clase avatar 'floten'. Apoyo de https://codepen.io/MarioDesigns/pen/woJgeo*/
@@ -120,8 +120,41 @@ height: 150px;
 box-sizing:content-box;
 border-radius: 50%; /*Esto hace que sea un círculo*/
 /*overflow: hidden; /*Esto protege que elementos NO se salgan del círculo*/
-box-shadow: 0 5px 15px 0px #73C2FB(0,0,0,1); /*Efecto de sombra, después del color muestra la opacidad*/
+box-shadow: 0 5px 15px 0px rgba(0,0,0,1); /*Efecto de sombra, después del color muestra la opacidad*/
 /*transform: translatey(0px); /*Parte de la animación, el comentar esto no parece afectar la animación*/
-animation: float 10s ease-in-out infinite; /*velocidad en la que flota*/
+animation: float 10s ease-in-out infinite; /*velocidad en la que flota -- AQUI SE VE LO DEL @KEYFRAMES!*/
 img { width: 100%; height: auto; } /*Esto asegura que la imagen quede dentro de su div/container */
+}
+
+.login-container{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  /*Lo de arriba debería poner TODO el container en el contenido de la página*/
+  font-family: "Fjalla One", sans-serif;
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+  /*Parece que no lo ocupo*line-height: 100px;/*Me mantiene todo mas al centro dentro de los divs del grid*/
+}
+
+#inputNombreUsuario{
+  line-height: 10px;
+}
+
+#inputContrasena{
+  line-height: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#botonStyle{
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#boxStylePink{
+  background: linear-gradient(#FC94B7,#E91E63);
 }
