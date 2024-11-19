@@ -113,19 +113,6 @@ img, input, nav {
   }
 }
 
-/*Hacer que imágenes de clase avatar 'floten'. Apoyo de https://codepen.io/MarioDesigns/pen/woJgeo*/
-.avatar {
-width: 150px;
-height: 150px;
-box-sizing:content-box;
-border-radius: 50%; /*Esto hace que sea un círculo*/
-/*overflow: hidden; /*Esto protege que elementos NO se salgan del círculo*/
-box-shadow: 0 5px 15px 0px rgba(0,0,0,1); /*Efecto de sombra, después del color muestra la opacidad*/
-/*transform: translatey(0px); /*Parte de la animación, el comentar esto no parece afectar la animación*/
-animation: float 10s ease-in-out infinite; /*velocidad en la que flota -- AQUI SE VE LO DEL @KEYFRAMES!*/
-img { width: 100%; height: auto; } /*Esto asegura que la imagen quede dentro de su div/container */
-}
-
 .login-container{
   display: flex;
   gap: 30px;
