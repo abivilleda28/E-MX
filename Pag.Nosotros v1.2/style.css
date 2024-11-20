@@ -71,7 +71,7 @@ nav {
 
 .quienSomos h2 {
     font-family: 'Cinzel Decorative', serif;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     color: #f61ed2;
     text-transform: uppercase;
@@ -84,7 +84,7 @@ nav {
 .quienSomos p {
 
     font-family: 'faja one';
-    font-size: 15px;
+    font-size: 20px;
     color: #595c5e;
     text-align: justify;
     line-height: 2;
@@ -142,12 +142,13 @@ nav {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 1px;
     color: #73C2FB;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .contenido p {
-    font-size: 16px;
+    font-size: 19px;
     font-family: 'fajaone';
     line-height: 1.;
     text-align: justify;
