@@ -362,14 +362,12 @@ nav {
 .cardIntegrantes h3 {
     font-family: Cinzel;
     font-size: 20px;
-    background: #73C2FB;
-    border-radius: 8px;
+    /* background: #73C2FB;*/
 }
 
 .card-content h5 {
     font-family: Cinzel;
     font-size: 15px;
-
 }
 
 /* --------------------------------------------------------------------*/
@@ -409,8 +407,7 @@ nav {
 .card .back {
     transform: perspective(600px) rotateY(180deg);
     background: #FFB300;
-    ;
-    padding: 15px;
+    /*padding: 15px; */
     color: #f3f3f3;
     display: flex;
     flex-direction: column;
@@ -434,7 +431,8 @@ nav {
     /* Hace que el contenido ocupe el espacio restante disponible */
     overflow: hidden;
     /* Previene que el texto se desborde fuera del contenedor */
-    width: 200px;
+    width: 220px;
+    align-items: center;
 }
 
 .card-title {
@@ -446,14 +444,21 @@ nav {
 }
 
 
-.card-text {
+.card-text { /*Especificaciones pra el texto de nuestra carta */
     font-family: 'faja one';
     font-size: 0.9rem;
     text-align: justify;
     background: #fce3f4;
+    height: 200px;
+    width: 210px;
+    border: 2px solid #E91E63;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+
 }
 
-.text-body-secondary {
+.text-body-secondary { /*Especificaciones para scrum y product owner */
     list-style-type: none;
     font-family: 'Roboto';
     text-align: justify;
@@ -461,6 +466,8 @@ nav {
     color: #636262;
     padding-left: 0;
     background: #FFB300;
+    padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 /* Responsividad */
