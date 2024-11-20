@@ -114,7 +114,7 @@ nav {
 
 .cont {
 
-    padding: auto;
+    padding: 25px;
 
 }
 
@@ -354,6 +354,10 @@ nav {
     margin: 40px;
 }
 
+.cardIntegrantes .card-title a {
+    text-decoration: none;
+}
+
 .cardIntegrantes h3 {
     font-family: Cinzel;
     font-size: 20px;
@@ -363,7 +367,6 @@ nav {
 .card-content h5 {
     font-family: Cinzel;
     font-size: 15px;
-
 }
 
 /* --------------------------------------------------------------------*/
@@ -440,7 +443,7 @@ nav {
 }
 
 
-.card-text {
+.card-text { /*Especificaciones pra el texto de nuestra carta */
     font-family: 'faja one';
     font-size: 0.9rem;
     text-align: justify;
@@ -454,7 +457,7 @@ nav {
 
 }
 
-.text-body-secondary {
+.text-body-secondary { /*Especificaciones para scrum y product owner */
     list-style-type: none;
     font-family: 'Roboto';
     text-align: justify;
