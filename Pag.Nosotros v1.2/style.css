@@ -1,3 +1,16 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+/*--------- estilos para el header -----------*/
+
 .navbar-brand1 {
     font-family: 'Cinzel Decorative';
     font-optical-sizing: auto;
@@ -9,15 +22,23 @@
 }
 
 .btn {
-    font-size: 11px;
+    font-size: 12px;
 
 }
+img,
+input,
+nav {
+    max-width: 100%;
+}
+/* Aqui termina el header */
 
+/* Esto se debe borrar debido a que ya no tienen una función en el html */
+/* En espera de su aprovación.
 #contenedor2 {
     height: 100px;
     background: linear-gradient(#73C2FB, #73C2FB, #28A0F6);
-}
-
+} */
+/*
 .list {
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
@@ -33,30 +54,14 @@
     margin-bottom: 5px;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    width: 100%;
-}
+*/
 
-* {
-    box-sizing: border-box;
-}
-
-img,
-input,
-nav {
-    max-width: 100%;
-}
-
-
+/*  Ya no se utilizo el carrusel.
 .carousel-item img {
     height: 200px;
     width: 20px;
 
-}
+} */
 
 /* Quienes somos*/
 .quienSomos {
