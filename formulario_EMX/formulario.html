@@ -59,7 +59,7 @@
           </nav>
       </div>
   </div>
-  <!-- Aqui empieza el formulario -->
+  <!-- Aqui empieza nuestra prueba -->
   <div id="estructuraGrid">
     <div id="contenedorImagen">
         <img src="compradora.jpg" alt="Imagen compradora" class="imagen">
@@ -67,67 +67,38 @@
     <div>
         <section class="form-container">
             <h1>Formulario de comprador</h1>
-            <div class="col-12">
-              <input type="text" class="form-control" id="nombre" placeholder="Nombre(s)">
-            </div>
-            <br>
-            <div class="col-12">
-              <input type="text" class="form-control" id="apellido" placeholder="Apellido(s)"
-            </div>
-            <br>
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Calle, Avenida, Privada...">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label">Tipo de domicilio</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Casa, apartamento, estudio o piso">
-              </div>
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="col-md-4">
-                <label for="inputState" class="form-label">Estado</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Elige</option>
-                  <!-- <option>...</option> -->
-                </select>
-              </div>
-              <div class="col-md-2">
-                <label for="inputZip" class="form-label">C.P</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
-              <div class="col-12" id="checkbox-container">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Términos y condiciones
-                  </label>
+            <form>
+                <div class="datoEntrada mb-3">
+                    <input type="text" placeholder="Nombre" class="form-control">
                 </div>
-              </div>
-              <center>
-              <div class="form-check mb-3" id="checkbox-container">
-                <input type="radio" class="form-check-input" id="promociones" name="promociones">
-                <label for="promociones" class="form-check-label">Quiero recibir promociones</label>
-            </div>
-              <div class="boton btn">
-                <button type="submit" class="btn btn-primary">Registrate</button>
-              </div>
-              </center>
+                <div class="datoEntrada mb-3"> 
+                    <input type="email" placeholder="Correo" class="form-control">
+                </div>
+                <div class="datoEntrada mb-3">
+                    <input type="tel" placeholder="Teléfono" class="form-control">
+                </div>
+                <div class="datoEntrada mb-3">
+                    <input type="text" placeholder="Dirección de envío" class="form-control">
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="terminos">
+                    <label for="terminos" class="form-check-label">Términos y condiciones</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="radio" class="form-check-input" id="promociones" name="promociones">
+                    <label for="promociones" class="form-check-label">Quiero recibir promociones</label>
+                </div>
+                <div class="text-center">
+                    <button id="registrarse" type="submit" class="btn btn-primary">Registrarse</button>
+                </div>  
             </form>
-        </section>
+        </section>       
         </div>
+        <!-- <div class="imagen">
+            <img src="ruta/a/tu/imagen2.jpg" alt="Imagen 2">
+        </div> -->
     </div>
+ 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -180,6 +151,6 @@
 </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./formulario.js"></script>
+  <script src="./Contactanos.js"></script>
 </body>
 </html>
