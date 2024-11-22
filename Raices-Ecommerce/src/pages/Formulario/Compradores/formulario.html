@@ -18,7 +18,7 @@
       <nav class="navbar text-bg-warning w-139">
           <div class="container">
             <a class="navbar-brand" href="#">
-              <img src="caco.png" alt="Bootstrap" width="150" height="150">
+              <img src="/src/assets/Images/caco.png" alt="Bootstrap" width="150" height="150">
             </a>
           </div>
         </nav>
@@ -46,13 +46,19 @@
                     <a class="nav-link active" aria-current="page" href="#">Productos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contáctanos</a>
+                    <a class="nav-link" href="/src/pages/Contactanos/contactanos.html">Contáctanos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Nosotros</a>
                   </li>
-                  <button type="button" class="btn btn-light ms-3 mb-2">Sign In</button>
-                  <button type="button" class="btn btn-dark ms-3 mb-2">Log In</button>
+                  <!-- Esto lo cambie -->
+                  <a href="/src/pages/Login/login.html">
+                    <button type="button" class="btn btn-light ms-3 align-items-start mb-2">Sign In</button>
+                  </a>
+                  
+                    <a href="/src/pages/Login/login.html">
+                    <button type="button" class="btn btn-dark ms-3 align-items-start mb-2">Log In</button>
+                  </a>
                 </ul>
               </div> 
             </div>
@@ -62,7 +68,7 @@
  <!-- Aquí empieza el formulario -->
 <div id="estructuraGrid">
   <div id="contenedorImagen">
-      <img src="compradora.jpg" alt="Imagen compradora" class="imagen">
+      <img src="/src/assets/Images/compradora.jpg" alt="Imagen compradora" class="imagen">
   </div>
   <div>
       <form class="form-container row g-3" id="miFormulario" onsubmit="return validarFormulario()">
